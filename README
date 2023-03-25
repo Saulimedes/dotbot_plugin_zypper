@@ -1,0 +1,21 @@
+# dotbot zypper Plugin
+
+Plugin for [Dotbot][dotbot_repo], that adds ```zypper``` directive, which allows you to install and upgrade packages using ```zypper``` from known sources or from configurable Repos.
+
+## Installation
+
+```
+git submodule add https://gitlab.com/paulbecker/dotbot_plugin_zypper.git
+```
+
+## Usage
+```yaml
+- zypper:
+    packages:
+      - package1
+      - package2
+      - package3
+    repositories:
+      - repository1
+      - repository2
+```
