@@ -14,11 +14,12 @@ git submodule add https://gitlab.com/paulbecker/dotbot_plugin_zypper.git
 
 ```yaml
 - zypper:
-    packages:
-      - package1
-      - package2
-      - package3
+    public_keys:
+      - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
     repositories:
-      - repository1
-      - repository2
+      - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+    packages:
+      - fish
+      - bottom
+      - brave-browser
 ```
